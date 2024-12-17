@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Image from "next/image";
 
 
 
@@ -48,7 +49,7 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="min-w-full text-center">
-              <img
+              <Image
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-24 h-24 mx-auto rounded-full border-4 border-yellow-400 mb-4"

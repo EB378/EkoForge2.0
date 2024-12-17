@@ -4,11 +4,11 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
 
-const Main = ({ locale }: { locale: string }) => {
+const Main = () => {
   const t = useTranslations("HomePage");
 
   // Animation Variants
@@ -25,11 +25,6 @@ const Main = ({ locale }: { locale: string }) => {
   const slideInRight = {
     hidden: { opacity: 0, x: 100 },
     visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  };
-
-  const rotateScale = {
-    hidden: { opacity: 0, rotate: -10, scale: 0.9 },
-    visible: { opacity: 1, rotate: 0, scale: 1, transition: { duration: 1 } },
   };
 
   return (
