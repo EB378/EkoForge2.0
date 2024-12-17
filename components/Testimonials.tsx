@@ -19,7 +19,7 @@ export default function Testimonials() {
       title: "CEO, GNN ry",
       feedback: t("testimonial1"),
       rating: 5,
-      image: "/anna.jpg"
+      image: "/ekotestimonial1.png"
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function Testimonials() {
       title: "Marketing Director, BrightTech",
       feedback: t("testimonial2"),
       rating: 4.5,
-      image: "/james.jpg"
+      image: "/ekotestimonial1.png"
     }
   ];
 
@@ -52,7 +52,9 @@ export default function Testimonials() {
               <Image
                 src={testimonial.image}
                 alt={testimonial.name}
-                className="w-24 h-24 mx-auto rounded-full border-4 border-yellow-400 mb-4"
+                width={96}
+                height={96}
+                className="mx-auto rounded-full border-4 border-yellow-400 mb-4"
               />
               <p className="italic content-center mx-16">{testimonial.feedback}</p>
               <h3 className="mt-4 font-bold">{testimonial.name}</h3>
