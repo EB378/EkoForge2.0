@@ -12,12 +12,12 @@ status = 302
 
 # Show a custom 404 for this path
 [[redirects]]
-from = "/ecommerce"
-to = "/store-closed"
+from = "/en"
+to = "google.com"
 status = 404
 
 # Rewrite a path
 [[redirects]]
 from = "/pass-through"
-to = "/index.html"
+to = "/"
 status = 200
