@@ -19,7 +19,7 @@ export default function Testimonials() {
       title: "CEO, GNN ry",
       feedback: t("testimonial1"),
       rating: 5,
-      image: "./ekotestimonial1.png"
+      image: "/ekotestimonial1.png"
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function Testimonials() {
       title: "Marketing Director, BrightTech",
       feedback: t("testimonial2"),
       rating: 4.5,
-      image: "./ekotestimonial1.png"
+      image: "/ekotestimonial1.png"
     }
   ];
 

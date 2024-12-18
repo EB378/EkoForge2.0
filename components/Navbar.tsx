@@ -24,7 +24,7 @@ const Navbar = ({ locale }: { locale: string }) => {
         {/* Logo */}
         <Link href={`/${locale}/`}>
           <Image
-            src="./CopyForge-3-removebg-preview.png"
+            src="/CopyForge-3-removebg-preview.png"
             width={172}
             height={35}
             alt="Results-Driven Business Solutions And Digital Marketing"
