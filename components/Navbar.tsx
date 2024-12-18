@@ -43,12 +43,6 @@ const Navbar = ({ locale }: { locale: string }) => {
         {/* Desktop Links */}
         <div className="hidden md:flex gap-8">
           <Link
-            href={`/${locale}/#clients`}
-            className="text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white transition-transform transform hover:scale-110"
-          >
-            {t("nav1")}
-          </Link>
-          <Link
             href={`/${locale}/#testimonials`}
             className="text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white transition-transform transform hover:scale-110"
           >

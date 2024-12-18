@@ -37,9 +37,6 @@ const Footer = ({ locale }: { locale: string }) => {
                 <a href="https://calendly.com/ekoforge" className="hover:underline">{t("book a call")}</a>
               </li>
               <li>
-                <a href={`/${locale}/#clients`} className="hover:underline">{t("fix my business")}</a>
-              </li>
-              <li>
                 <a href={`/${locale}/#testimonials`} className="hover:underline">{t("case studies")}</a>
               </li>
               <li>
