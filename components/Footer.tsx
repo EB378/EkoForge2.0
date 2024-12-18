@@ -17,7 +17,7 @@ const Footer = ({ locale }: { locale: string }) => {
           <div className="col-span-1 md:col-span-2 space-y-4">
             <Link href={`/${locale}/`}>
               <Image
-                src="/CopyForge-3-removebg-preview.png"
+                src="./CopyForge-3-removebg-preview.png"
                 alt="Logo"
                 width={220}
                 height={80}

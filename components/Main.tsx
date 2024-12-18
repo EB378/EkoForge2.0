@@ -39,7 +39,7 @@ const Main = () => {
             className="relative text-center h-[45vh] flex items-center justify-center overflow-hidden"
           >
             <Image
-              src="/backgroundmain.png"
+              src="./backgroundmain.png"
               alt="Hero Background"
               fill
               className="absolute top-0 left-0 object-cover blur-sm brightness-50"
