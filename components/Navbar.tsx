@@ -61,7 +61,6 @@ const Navbar = ({ locale }: { locale: string }) => {
             {t("nav4")}
           </Link>
           <select
-            value={locale}
             onChange={handleLanguageChange}
             className="rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           >
@@ -104,7 +103,6 @@ const Navbar = ({ locale }: { locale: string }) => {
           </Link>
           {/* Language Selector */}
           <select
-            value={locale}
             onChange={handleLanguageChange}
             className="block rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           >
