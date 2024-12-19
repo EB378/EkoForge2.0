@@ -44,6 +44,7 @@ const Main = () => {
               fill
               className="absolute top-0 left-0 object-cover blur-sm brightness-50"
             />
+            <div>
             <motion.h1
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
@@ -52,6 +53,15 @@ const Main = () => {
             >
               {t("Unleash Your Business Potential")}
             </motion.h1>
+            <motion.h3
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: 0.5, duration: 1 }}
+              className="relative z-10 text-[4vw] mt-3 sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight text-white"
+            >
+              {t("With Effective Digital Marketing Stratgies and Copy")}
+            </motion.h3>
+            </div>
           </motion.div>
 
           {/* Diagonal CTA */}
