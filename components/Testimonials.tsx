@@ -23,11 +23,11 @@ export default function Testimonials() {
     },
     {
       id: 2,
-      name: "James Miller",
-      title: "Marketing Director, BrightTech",
+      name: "Emilia",
+      title: "Professor, SERPENTINE-h2020",
       feedback: t("testimonial2"),
-      rating: 4.5,
-      image: "/ekotestimonial1.png"
+      rating: 4.75,
+      image: "/ekotestimonial2.png"
     }
   ];
 
