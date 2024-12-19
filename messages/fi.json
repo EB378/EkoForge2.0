@@ -1,59 +1,58 @@
 {
-    "NavbarLinks": {
-      "homeTitle": "EkoForge Oy",
-      "nav1": "Kuinka korjaan yritykseni?",
-      "nav2": "Suosittelut",
-      "nav3": "Ota yhteyttä",
-      "nav4": "Varaa puhelu"
-    },
-    "Footer": {
-      "aboutText": "Yritysten menestyminen innovatiivisilla ratkaisuilla.",
-      "navigation": "Navigointi",
-      "book a call": "Book a Call",
-      "fix my business": "Korjaa yritykseni",
-      "case studies": "Tapaustutkimukset",
-      "testimonials": "Suosittelut",
-      "contact": "Ota yhteyttä",
-      "socialmedia": "Sosiaalinen media",
-      "instagram": "Instagram",
-      "facebook": "Facebook",
-      "linkedin": "Linkedin",
-      "company": "Yritys",
-      "about": "Meistä",
-      "legal": "Legal",
-      "terms": "Terms of Service",
-      "privacy": "Privacy Policy",
-      "license": "License",
-      "rights": "All rights reserved."
-    },
-      "HomePage": {
-        "Unleash Your Business Potential": "Unleash Your Business Potential",
-        "Book Your Call": "Book Your Call",
-        "Contact Us": "Contact Us",
-        "What's Holding": "What’s Holding",
-        "You Back?": "You Back?",
-        "Challenge1": "No Experience.",
-        "ChallengeDetail1": "You don’t know where to start or lack the expertise to move forward.",
-        "Challenge2": "No Time.",
-        "ChallengeDetail2": "You’re too busy managing your business to focus on growth strategies.",
-        "Challenge3": "No Resources.",
-        "ChallengeDetail3": "You don’t have the right tools or resources to scale effectively.",
-        "Your Journey Starts Here": "Your Journey Starts Here",
-        "CTASUB": "Don't let your competitors take the lead. Let's grow your business today.",
-        "Book a Free Consultation": "Book a Free Consultation"
-      },
-      "Testimonials": {
-        "title": "What Our Clients Say",
-        "testimonial1": "The impact on our branding and visual image has been very positive. I would highly recommend these services for any company or NGO that wants to have reliable, fast paced and good quality visual updates for their social media and/or advertisement.",
-        "testimonial2": "He communicated with everyone excellently and politely, on the other hand he was able to work very independently and had his own visions and ideas on how to do the work. He produced an amazing outreach video for our project."
-      },
-      "Contact": {
-        "title": "Contact Us",
-        "name": "Name",
-        "emailentry": "Email",
-        "reason": "What are you contacting us about?",
-        "send": "Send",
-        "contact information": "Contact Information"
-      }
-    }
-    
+  "NavbarLinks": {
+    "homeTitle": "EkoForge - B2B Kasvukumppani",
+    "nav1": "Kuinka Korjaan Yritykseni?",
+    "nav2": "Asiakaskokemuksia",
+    "nav3": "Ota Yhteyttä",
+    "nav4": "Varaa Aika"
+  },
+  "Footer": {
+    "aboutText": "Edistämme Liiketoimintaa Digitaalisilla Ratkaisuilla.",
+    "navigation": "Navigointi",
+    "book a call": "Varaa Aika",
+    "fix my business": "Korjaa Yritykseni",
+    "case studies": "Tapaustutkimukset",
+    "testimonials": "Asiakaskokemuksia",
+    "contact": "Ota Yhteyttä",
+    "socialmedia": "Sosiaalinen Media",
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "linkedin": "LinkedIn",
+    "company": "Yritys",
+    "about": "Meistä",
+    "legal": "Legal",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "license": "License",
+    "rights": "All rights reserved."
+  },
+  "HomePage": {
+    "Unleash Your Business Potential": "Vapauta Yrityksesi Potentiaali",
+    "Book Your Call": "Varaa Aika",
+    "Contact Us": "Ota Yhteyttä",
+    "What's Holding": "Mikä Estää",
+    "You Back?": "Sinua?",
+    "Challenge1": "Ei Kokemusta.",
+    "ChallengeDetail1": "Et tiedä mistä aloittaa tai sinulta puuttuu tarvittava asiantuntemus.",
+    "Challenge2": "Ei Aikaa.",
+    "ChallengeDetail2": "Olet liian kiireinen yrityksesi johtamisessa keskittyäksesi kasvustrategioihin.",
+    "Challenge3": "Ei Resursseja.",
+    "ChallengeDetail3": "Sinulla ei ole oikeita työkaluja tai resursseja laajentamiseen.",
+    "Your Journey Starts Here": "Matkasi Alkaa Tästä",
+    "CTASUB": "Älä anna kilpailijoidesi mennä ohitsesi. Kasvata yritystäsi jo tänään.",
+    "Book a Free Consultation": "Varaa Ilmainen Konsultaatio"
+  },
+  "Testimonials": {
+    "title": "Mitä Asiakkaamme Sanovat",
+    "testimonial1": "Vaikutus brändiimme ja visuaaliseen ilmeeseemme on ollut erittäin positiivinen. Suosittelen lämpimästi näitä palveluja kaikille yrityksille tai järjestöille, jotka haluavat luotettavia, nopeita ja laadukkaita visuaalisia päivityksiä sosiaaliseen mediaansa tai mainontaan.",
+    "testimonial2": "Hän kommunikoi erinomaisesti ja kohteliaasti kaikkien kanssa, mutta osasi myös työskennellä hyvin itsenäisesti ja tuoda esiin omia näkemyksiään ja ideoitaan työn toteutukseen. Hän tuotti upean esittelyvideon projektistamme."
+  },
+  "Contact": {
+    "title": "Ota Yhteyttä",
+    "name": "Nimi",
+    "emailentry": "Sähköposti",
+    "reason": "Miksi otat meihin yhteyttä?",
+    "send": "Lähetä",
+    "contact information": "Yhteystiedot"
+  }
+}
