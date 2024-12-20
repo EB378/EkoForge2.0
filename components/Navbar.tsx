@@ -4,27 +4,27 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React, { useState, ChangeEvent } from "react";
 
 const Navbar = ({ locale }: { locale: string }) => {
   const t = useTranslations("NavbarLinks");
   const pathname = usePathname();
   const router = useRouter();
+
+  // State to manage mobile menu toggle
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Local state for managing the active locale
-  const [currentLocale, setCurrentLocale] = useState(locale);
-
-  useEffect(() => {
-    // Sync the local state with the passed-in locale prop
-    setCurrentLocale(locale);
-  }, [locale]);
+  // Extract the current locale from the pathname
+  const currentLocale = pathname.split("/")[1] || locale || "en"; // Default to 'en'
 
   const handleLanguageChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
-    setCurrentLocale(newLocale); // Update the local state
-    const path = pathname.split("/").slice(2).join("/"); // Strip current locale from the path
-    router.push(`/${newLocale}/${path || ""}`); // Redirect to the new locale
+
+    // Prevent redundant reload if the same locale is selected
+    if (newLocale === currentLocale) return;
+
+    const path = pathname.split("/").slice(2).join("/"); // Extract the rest of the path
+    router.push(`/${newLocale}/${path}`); // Navigate to the new locale path
   };
 
   return (
@@ -44,7 +44,7 @@ const Navbar = ({ locale }: { locale: string }) => {
         {/* Mobile Menu Button (Hamburger) */}
         <button
           className="md:hidden text-xl focus:outline-none focus:ring-2 focus:ring-yellow-500"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} // Toggle the mobile menu
         >
           ☰
         </button>
@@ -70,7 +70,7 @@ const Navbar = ({ locale }: { locale: string }) => {
             {t("nav4")}
           </Link>
           <select
-            value={currentLocale}
+            value={currentLocale} // Dynamically reflect the current locale
             onChange={handleLanguageChange}
             className="rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
           >
