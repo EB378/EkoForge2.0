@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import Image from "next/image";
+import Hero from "@/components/Hero"
 import React from "react";
 import { motion } from "framer-motion";
 import Contact from "@/components/Contact";
@@ -32,72 +32,8 @@ const Main = () => {
       <div className="flex flex-col items-center justify-center w-screen bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 text-white overflow-hidden">
         <main className="w-full bg-black/80 relative">
           {/* Hero Section */}
-          <motion.div
-            initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="relative text-center h-[45vh] flex items-center justify-center overflow-hidden"
-          >
-            <Image
-              src="/backgroundmain.png"
-              alt="Hero Background"
-              fill
-              className="absolute top-0 left-0 object-cover blur-sm brightness-50"
-            />
-            <div>
-            <motion.h1
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="relative z-10 text-[8vw] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight font-bold text-white"
-            >
-              {t("Unleash Your Business Potential")}
-            </motion.h1>
-            <motion.h3
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-              className="relative z-10 text-[4vw] mt-3 sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl leading-tight text-white"
-            >
-              {t("With Effective Digital Marketing Stratgies and Copy")}
-            </motion.h3>
-            </div>
-          </motion.div>
+          <Hero />
 
-          {/* Diagonal CTA */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideInLeft}
-            viewport={{ once: true }}
-            className="relative"
-          >
-            <div className="-skew-y-3 bg-gradient-to-r from-pink-500 to-purple-600 overflow-hidden">
-              <div className="skew-y-3 p-6 sm:p-8 flex flex-col sm:flex-row justify-center items-center gap-4 min-h-[100px]">
-                {/* Book Your Call */}
-                <Link href="https://calendly.com/ekoforge">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-8 py-3 bg-white text-black font-bold text-lg rounded-full shadow-lg transition-transform"
-                  >
-                    {t("Book Your Call")}
-                  </motion.button>
-                </Link>
-
-                {/* Contact Us */}
-                <Link href="#contactsec">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-8 py-3 bg-transparent border border-white text-white font-bold text-lg rounded-full shadow-lg transition-transform"
-                  >
-                    {t("Contact Us")}
-                  </motion.button>
-                </Link>
-              </div>
-            </div>
-          </motion.div>
 
           {/* Problem-Solution Section */}
           <div className="relative px-6 sm:px-12 lg:px-24 mt-16 text-center">
@@ -105,7 +41,6 @@ const Main = () => {
               initial="hidden"
               whileInView="visible"
               variants={slideInRight}
-              viewport={{ once: true }}
               className="text-4xl sm:text-5xl font-extrabold text-white mb-12"
             >
               {t("What's Holding")}
@@ -118,7 +53,6 @@ const Main = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
               className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center"
             >
               {[
@@ -152,7 +86,6 @@ const Main = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
             variants={slideInRight}
             className="my-16 text-center px-6 sm:px-12 lg:px-24"
           >
@@ -172,7 +105,6 @@ const Main = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
             variants={fadeInUp}
             className="mt-16"
           >
