@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative py-16 px-6 bg-gradient-to-br from-gray-800 to-black text-white" id="contactsec">
+    <div className="relative py-16 px-6 bg-gradient-to-b from-neutral-900 to-purple-900/80 text-white" id="contactsec">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Contact Form */}
         <motion.div

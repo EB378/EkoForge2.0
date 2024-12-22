@@ -62,7 +62,7 @@ const Hero = () => {
         {/* CTA Section */}
         <div className=" w-full md:w-[35%] h-auto md:h-[45vh]">
           {/* For Mobile: Thin Box */}
-          <div className="flex md:hidden w-full bg-gradient-to-r from-pink-500 to-purple-600 rounded-lg px-4 py-3 items-center justify-between mt-6">
+          <div className="flex md:hidden w-full bg-gradient-to-r from-purple-700 to-purple-500 rounded-lg px-4 py-3 items-center justify-between mt-6">
             <Link href="https://calendly.com/ekoforge">
               <motion.button
                 whileHover={{
@@ -90,7 +90,7 @@ const Hero = () => {
           </div>
 
           {/* For Desktop: Diagonal Banner */}
-          <div className="hidden md:block w-full h-full bg-gradient-to-r from-pink-500 to-purple-600 -skew-x-45 transform md:translate-x-30">
+          <div className="hidden md:block w-full h-full bg-gradient-to-r from-purple-700 to-purple-500 -skew-x-45 transform md:translate-x-30">
             {/* Centered Buttons */}
             <div className="skew-x-45 h-full flex flex-inline justify-center items-center md:gap-2 lg:gap-6">
               <Link href="https://calendly.com/ekoforge">

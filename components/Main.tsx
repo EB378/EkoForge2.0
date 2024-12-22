@@ -24,11 +24,10 @@ const Main = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-screen bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 text-white overflow-hidden">
-        <main className="w-full bg-black/80 relative">
+      <div className="flex flex-col items-center justify-center w-screen bg-gradient-to-tr from-black via-gray-900 to-purple-900 text-white overflow-hidden">
+        <main className="w-full bg-neutral-900 relative">
           {/* Hero Section */}
           <Hero />
-
 
           {/* Problem-Solution Section */}
           <div className="relative px-6 sm:px-12 lg:px-24 mt-16 text-center">
@@ -39,7 +38,7 @@ const Main = () => {
               className="text-4xl sm:text-5xl font-extrabold text-white mb-12"
             >
               {t("What's Holding")}
-              <span className="bg-blue-900 px-3 py-2 rounded-lg inline-block ml-2 shadow-md">
+              <span className="bg-purple-800 px-3 py-2 rounded-lg inline-block ml-2 shadow-md">
                 {t("You Back?")}
               </span>
             </motion.h2>
@@ -64,10 +63,10 @@ const Main = () => {
                   }}
                   className={`relative w-full max-w-[350px] p-6 ${
                     index === 0
-                      ? "bg-gradient-to-b from-yellow-600 to-orange-700"
+                      ? "bg-gradient-to-b from-purple-700 to-indigo-900"
                       : index === 1
-                      ? "bg-gradient-to-b from-teal-600 to-blue-700"
-                      : "bg-gradient-to-b from-purple-600 to-pink-700"
+                      ? "bg-gradient-to-b from-indigo-800 to-purple-800"
+                      : "bg-gradient-to-b from-purple-600 to-fuchsia-800"
                   } rounded-2xl shadow-2xl transition-transform duration-300`}
                 >
                   <h3 className="text-white text-2xl font-bold mb-4">{item.title}</h3>
@@ -89,7 +88,7 @@ const Main = () => {
             <Link href="https://calendly.com/ekoforge">
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                className="px-8 py-4 bg-gradient-to-r from-red-500 to-pink-500 text-white font-bold text-xl rounded-full shadow-lg transition-transform"
+                className="px-8 py-4 bg-gradient-to-r from-purple-700 to-purple-500 text-white font-bold text-xl rounded-full shadow-lg transition-transform"
               >
                 {t("Book a Free Consultation")}
               </motion.button>

@@ -28,7 +28,7 @@ const Navbar = ({ locale }: { locale: string }) => {
   };
 
   return (
-    <nav className="bg-black text-white w-screen">
+    <nav className="bg-neutral-900 text-white w-screen">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href={`/${currentLocale}/`}>
@@ -53,26 +53,26 @@ const Navbar = ({ locale }: { locale: string }) => {
         <div className="hidden md:flex gap-8">
           <Link
             href={`/${currentLocale}/#testimonials`}
-            className="text-lg mt-1 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white transition-transform transform hover:scale-110"
+            className="text-lg mt-1 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white transition-transform transform hover:scale-110"
           >
             {t("nav2")}
           </Link>
           <Link
             href={`/${currentLocale}/#contactsec`}
-            className="text-lg mt-1 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white transition-transform transform hover:scale-110"
+            className="text-lg mt-1 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white transition-transform transform hover:scale-110"
           >
             {t("nav3")}
           </Link>
           <Link
             href={`https://calendly.com/ekoforge`}
-            className="text-lg mt-1 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white transition-transform transform hover:scale-110"
+            className="text-lg mt-1 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white transition-transform transform hover:scale-110"
           >
             {t("nav4")}
           </Link>
           <select
             value={currentLocale} // Dynamically reflect the current locale
             onChange={handleLanguageChange}
-            className="rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
           >
             <option value="en">EN</option>
             <option value="fi">FI</option>
@@ -85,28 +85,28 @@ const Navbar = ({ locale }: { locale: string }) => {
         <div className="md:hidden bg-black text-white px-6 py-4 space-y-4">
           <Link
             href={`/${currentLocale}/#clients`}
-            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white"
+            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {t("nav1")}
           </Link>
           <Link
             href={`/${currentLocale}/#testimonials`}
-            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white"
+            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {t("nav2")}
           </Link>
           <Link
             href={`/${currentLocale}/#contactsec`}
-            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white"
+            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {t("nav3")}
           </Link>
           <Link
             href={`https://calendly.com/ekoforge`}
-            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-yellow-500 to-white"
+            className="block text-lg font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-purple-500 to-white"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {t("nav4")}
@@ -115,7 +115,7 @@ const Navbar = ({ locale }: { locale: string }) => {
           <select
             value={currentLocale}
             onChange={handleLanguageChange}
-            className="block rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="block rounded-md px-4 py-2 bg-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
           >
             <option value="en">EN</option>
             <option value="fi">FI</option>

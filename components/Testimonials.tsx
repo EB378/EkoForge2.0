@@ -39,7 +39,7 @@ export default function Testimonials() {
   const prevSlide = () => setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <section className="py-16 bg-gray-900 text-white" id="testimonials">
+    <section className="py-16 bg-neutral-900 text-white" id="testimonials">
       <h2 className="text-4xl text-center mb-12">{t("title")}</h2>
       <div className="relative w-4/5 mx-auto overflow-hidden">
         {/* Testimonial Slide */}
