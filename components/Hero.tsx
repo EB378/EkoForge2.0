@@ -20,7 +20,8 @@ const Hero = () => {
   };
 
   return (
-    <div className="w-full h-[45vh] overflow-hidden flex flex-col md:flex-row">
+    <section>
+    <div className="relative w-full h-[45vh] overflow-hidden flex flex-col md:flex-row">
       {/* Background Image */}
       <motion.div
         initial="hidden"
@@ -125,6 +126,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
